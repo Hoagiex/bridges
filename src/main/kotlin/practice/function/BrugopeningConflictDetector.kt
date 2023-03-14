@@ -36,7 +36,6 @@ class BrugopeningConflictDetector {
         second.openingsTijd.isBetween(first.openingsTijd, first.sluitingsTijd) ||
         second.sluitingsTijd.isBetween(first.openingsTijd, first.sluitingsTijd)
 
-
     private fun toConflict(
         conflict: Pair<BrugopeningDto, BrugopeningDto>
     ) = BrugopeningConflictDto(
