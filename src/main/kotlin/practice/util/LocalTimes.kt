@@ -7,5 +7,5 @@ object LocalTimes {
     fun LocalTime.isBetween(
         start: LocalTime,
         end: LocalTime
-    ) = !isBefore(start) && !isAfter(end)
+    ) = this in start..end
 }
